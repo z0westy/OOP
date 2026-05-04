@@ -1,0 +1,40 @@
+﻿// Class for line
+[Serializable]
+public class Line : Figure
+{
+    public static new int numCoords = 4;
+    public static new string[] placeholders = { "x_1", "y_1", "x_2", "y_2" };
+
+    // Class for drawing line
+    [Serializable]
+    public class LineDrawing : Drawing
+    {
+        // Overridden function for drawing line
+        public override void Draw(Graphics g, Pen p, int[] new_coords)
+        {
+            int x1 = new_coords[0]; int y1 = new_coords[1];
+            int x2 = new_coords[2]; int y2 = new_coords[3];
+            g.DrawLine(p, x1, y1, x2, y2);
+        }
+    }
+
+    public Line(int[] new_coords)
+    {
+        drawing = new LineDrawing();
+        coords = new_coords;
+    }
+
+    // Overridden function for validating coords
+    public override bool isValidCoords(int[] new_coords)
+    {
+        return true;
+    }
+
+    // Overridden function for modifying line
+    public override bool Modify(int[] new_coords)
+    {
+        if (!isValidCoords(new_coords)) { return false; }
+        coords = new_coords;
+        return true;
+    }
+}
