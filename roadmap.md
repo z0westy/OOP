@@ -8,7 +8,6 @@
 
 **Практика:**  
 - [ ] 15 задач на LeetCode (Easy: массивы, строки, словари)  
-- [ ] Написать простой парсер CSV → JSON
 
 ---
 
@@ -69,7 +68,7 @@
 ## 7. Деплой (неделя 11)
 - [ ] Gunicorn (для Flask)
 - [ ] Настроить Apache (reverse proxy через `mod_proxy`)
-- [ ] Задеплоить на VPS (DigitalOcean / Hetzner / любой другой)
+- [ ] Задеплоить на VPS
 
 **Практика:**  
 - [ ] Проект доступен по IP или домену
@@ -91,26 +90,6 @@
 
 ---
 
-## Что НЕ вошло (откинул)
-- Docker, docker-compose
-- Celery, Redis
-- Alembic
-- GitHub Actions, CI/CD
-- WebSockets, микросервисы, Clean Architecture
-
----
-
-## Ресурсы (только нужное)
-- **Python**: Stepik «Поколение Python» + LeetCode (Easy)  
-- **Git**: Learn Git Branching  
-- **SQL**: SQLBolt + Stepik «Основы SQL»  
-- **MySQL**: официальная документация + YouTube «MySQL для начинающих»  
-- **Flask**: официальная документация + YouTube (selfedu)  
-- **Асинхронность**: YouTube «Асинхронный Python для начинающих»  
-- **Apache**: DigitalOcean гайды + YouTube «Настройка Apache для Python»
-
----
-
 ## Поиск работы (параллельно с проектом)
 - [ ] Сделать LinkedIn профиль на английском  
 - [ ] Откликаться на HH / Rabota.by (5–10 в день)  
@@ -118,4 +97,4 @@
 
 ---
 
-**Итог:** 3 месяца → готовый проект + базовые навыки (Flask + MySQL + асинхронность + Apache) → можно выходить на Junior позиции.
+**Итог:** 3 месяца → готовый проект + базовые навыки (Flask + MySQL + асинхронность + Apache).
